@@ -17,10 +17,18 @@
     var wgs84togcj02 = coordtransform.wgs84togcj02(116.404, 39.915);
     //国测局坐标转wgs84坐标
     var gcj02towgs84 = coordtransform.gcj02towgs84(116.404, 39.915);
+	
+	//百度墨卡托转经纬度
+	var bd_mkt2bd_wgs = coordtransform.bd_mkt2bd_wgs(12128773.43, 4040249.00);
+	//百度经纬度转墨卡托
+	var bd_wgs2bd_mkt = coordtransform.bd_wgs2bd_mkt(108.95344, 34.265657);
+	
     console.log(bd09togcj02);
     console.log(gcj02tobd09);
     console.log(wgs84togcj02);
     console.log(gcj02towgs84);
+	 console.log(bd_mkt2bd_wgs);
+    console.log(bd_wgs2bd_mkt);
     //result
     //bd09togcj02:   [ 116.39762729119315, 39.90865673957631 ]
     //gcj02tobd09:   [ 116.41036949371029, 39.92133699351021 ]
